@@ -17,7 +17,7 @@
 
 """
 import sys
-import time
+
 sys.path.append(".")
 
 # Import RTM module
@@ -365,7 +365,7 @@ def MyModuleInit(manager):
     EV3SamplePyInit(manager)
 
     # Create a component
-    comp = manager.createComponent("EV3SamplePy")
+    manager.createComponent("EV3SamplePy")
 
 def main():
 	mgr = OpenRTM_aist.Manager.init(sys.argv)
