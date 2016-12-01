@@ -47,7 +47,7 @@ ev3samplepy_spec = ["implementation_id", "EV3SamplePy",
 		 "max_instance",      "1", 
 		 "language",          "Python", 
 		 "lang_type",         "SCRIPT",
-		 "conf.default.forward_velocity", "0.0",
+		 "conf.default.forward_velocity", "0.00",
 		 "conf.default.rotate_velocity", "0.0",
 
          #"conf.default.__forward_velocity", "double.0.04",
@@ -55,7 +55,7 @@ ev3samplepy_spec = ["implementation_id", "EV3SamplePy",
 
 		 "conf.__widget__.forward_velocity", "slider.0.04",
 		 "conf.__widget__.rotate_velocity", "slider.0.2",
-		 "conf.__constraints__.forward_velocity", "-0.2<=x<=0.2",
+		 "conf.__constraints__.forward_velocity", "-0.20<=x<=0.20",
 		 "conf.__constraints__.rotate_velocity", "-3.1<=x<=3.1",
 
          "conf.__type__.forward_velocity", "double.0.04",
@@ -122,7 +122,7 @@ class EV3SamplePy(OpenRTM_aist.DataFlowComponentBase):
 		 - Unit: m/s
 		 - Constraint: -0.2<=x<=0.2
 		"""
-		self._forward_velocity = [0.0]
+		self._forward_velocity = [0.00]
 		"""
 		回転速度
 		 - Name: rotate_velocity rotate_velocity

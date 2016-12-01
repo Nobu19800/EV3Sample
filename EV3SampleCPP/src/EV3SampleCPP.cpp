@@ -33,14 +33,14 @@ static const char* ev3samplecpp_spec[] =
     "language",          "C++",
     "lang_type",         "compile",
     // Configuration variables
-    "conf.default.forward_velocity", "0.0",
+    "conf.default.forward_velocity", "0.00",
     "conf.default.rotate_velocity", "0.0",
 
     // Widget
     "conf.__widget__.forward_velocity", "slider.0.04",
     "conf.__widget__.rotate_velocity", "slider.0.2",
     // Constraints
-    "conf.__constraints__.forward_velocity", "-0.2<=x<=0.2",
+    "conf.__constraints__.forward_velocity", "-0.20<=x<=0.20",
     "conf.__constraints__.rotate_velocity", "-3.1<=x<=3.1",
 
     "conf.__type__.forward_velocity", "double.0.04",
@@ -95,7 +95,7 @@ RTC::ReturnCode_t EV3SampleCPP::onInitialize()
 
   // <rtc-template block="bind_config">
   // Bind variables and configuration variable
-  bindParameter("forward_velocity", m_forward_velocity, "0.0");
+  bindParameter("forward_velocity", m_forward_velocity, "0.00");
   bindParameter("rotate_velocity", m_rotate_velocity, "0.0");
   // </rtc-template>
   
